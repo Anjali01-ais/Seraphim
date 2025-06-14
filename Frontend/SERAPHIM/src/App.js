@@ -6,11 +6,13 @@ import Donate from "./components/pages/donate.js";
 import ContactUs from "./components/pages/contactUs.js";
 import FuturePlans from "./components/pages/FuturePlans.js";
 import Seraphs from "./components/pages/seraphs.js";
+import Register from './Register';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/register" element={<Register />} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
