@@ -32,6 +32,9 @@ nav{
     margin-bottom: 2rem;
     font-size: 2rem;
 }
+about-us-title{
+    font-size:2rem ;
+}
 .mission-text {
     color: #6c757d;
     font-size: 1.1rem;
@@ -48,6 +51,22 @@ nav{
     color: #007bff;
     margin-bottom: 1rem;
 }
+.testimonial p {
+  color: #212529; 
+  font-size: 1.1rem;
+  font-weight: 500; 
+  margin-bottom: 0.5rem;
+}
+
+.testimonial footer {
+  color: #495057; 
+  font-style: italic;
+  background: none !important; /* Removes grey background */
+  padding: 0;
+  margin-top: 0.5rem;
+  display: block;
+}
+
 .fade-in {
     opacity: 0;
     transform: translateY(30px);

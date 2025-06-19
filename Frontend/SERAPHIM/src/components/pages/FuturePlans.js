@@ -24,9 +24,7 @@ function FuturePlans() {
       <FutureHeader />
       <Navbar />
       <div className={`container my-5 ${theme}`}>
-        <button className={`btn btn-outline-${theme === "Light" ? "dark" : "light"} mb-4`} id="btn" onClick={toggleTheme}>
-          Change Theme
-        </button>
+        
 
         {/* Initiatives Section */}
         <div className="row">
