@@ -1,12 +1,13 @@
 import { Helmet } from "react-helmet-async";
 import "../../CSS/Future.css";
-function FuturePlans() {
+
+function FuturePlansHeader() {
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Future Plans</title>
+        <title>Future plans</title>
         <link
           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
           rel="stylesheet"
@@ -17,15 +18,25 @@ function FuturePlans() {
         <link rel="shortcut icon" href="images/future.ico" type="image/x-icon" />
       </Helmet>
 
-      <header>
-        <h1>Future Plans</h1>
-      </header>
-
-      <main>
-        <p>Discover our upcoming goals and vision...</p>
-      </main>
+      
+      <div className="header">
+        <div className="logo-container">
+          <a href="#">
+            <img src="images/logo.jpg" alt="Seraphim logo" className="logo" />
+          </a>
+        </div>
+        <div className="text-container">
+          <a id="A1" href="#">
+            <h1 className="Header-title">Seraphim</h1>
+            <h2 className="Header-title">A Social Awareness Club</h2>
+          </a>
+          <a id="A2" href="https://iiitl.ac.in/">
+            <p>Indian Institute of Information Technology, Lucknow</p>
+          </a>
+        </div>
+      </div>
     </>
   );
 }
 
-export default FuturePlans;
+export default FuturePlansHeader;

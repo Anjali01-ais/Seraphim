@@ -5,11 +5,11 @@ function Footer() {
     <footer>
       <div className="footer">
         <div className="footer-content">
-          <p>Seraphim<br />
-             A Social Awareness Club <br />
-             Indian Institute Of Information Technology<br />
-             Lucknow - 226002, Uttar Pradesh, India.</p>
-          <p>Contact Us: <a href="mailto:seraphim@iiitl.ac.in">seraphim@iiitl.ac.in</a></p>
+         Seraphim<br/>
+    A Social Awareness Club<br/>
+    Indian Institute Of Information Technology<br/>
+    Lucknow - 226002, Uttar Pradesh, India.<br/>
+    Contact Us: seraphim@iiiti.ac.in
         </div>
         <div className="social">
           <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>

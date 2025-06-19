@@ -22,8 +22,15 @@
     background-color: #0056b3;
     transform: scale(1.1);
   }
+.form-control{
+  width: 540px !important;
+  box-sizing: border-box;
+}
 
+#form{
+    width: 600px !important;;
 
+}
         .title {
             color: #343a40;
             font-weight: bold;
@@ -142,3 +149,4 @@ nav ul{
       display: flex;
     }
   }
+  

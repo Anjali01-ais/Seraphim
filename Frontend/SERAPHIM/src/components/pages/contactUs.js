@@ -10,34 +10,17 @@ function ContactUs() {
 
   const handleChange = (e) => setFormData({ ...formData, [e.target.id]: e.target.value });
 
-  const handleSubmit = async (e) => {
-  e.preventDefault();
-  const { name, email, subject, message } = formData;
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const { name, email, subject, message } = formData;
 
-  if (!name || !email || !subject || !message) {
-    setFormMessage("Please fill out all fields.");
-    return;
-  }
-
-  try {
-    const response = await fetch("http://localhost:8080/api/contact/submit", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(formData),
-    });
-
-    if (response.ok) {
+    if (!name || !email || !subject || !message) {
+      setFormMessage("Please fill out all fields.");
+    } else {
       setFormMessage(`Thank you, ${name}! Your message has been sent.`);
       setFormData({ name: "", email: "", subject: "", message: "" });
-    } else {
-      setFormMessage("Failed to send message.");
     }
-  } catch (error) {
-    console.error("Error:", error);
-    setFormMessage("Error sending message.");
-  }
-};
-
+  };
 
   return (
     <>
@@ -45,12 +28,14 @@ function ContactUs() {
       <Navbar />
       <div className="container py-5">
         <h2 className="text-center title">Get in Touch</h2>
-
-        <div className="row">
-          <div className="col-md-6">
+          
+         <div className="row">
+          <div className="col-md-6" id="form">
             <form onSubmit={handleSubmit}>
               <label htmlFor="name" className="form-label">Full Name</label>
-              <input type="text" className="form-control" id="name" placeholder="Enter your name" value={formData.name} onChange={handleChange} required />
+              <input type="text" className="form-control full width" id="name" placeholder="Enter your name" value={formData.name} onChange={handleChange}style={{width:"100% !important"
+    
+             }} required />
 
               <label htmlFor="email" className="form-label">Email Address</label>
               <input type="email" className="form-control" id="email" placeholder="Enter your email" value={formData.email} onChange={handleChange} required />
@@ -67,11 +52,12 @@ function ContactUs() {
           </div>
 
           {/* Contact Details */}
-          <div className="col-md-6">
+          
+          <div className="col-md-6" id="form">
             <h4>Contact Details</h4>
-            <p><i className="fas fa-map-marker-alt me-2"></i>IIIT Lucknow, Lucknow, Uttar Pradesh</p>
-            <p><i className="fas fa-phone me-2"></i>+91 906841XXXX</p>
-            <p><i className="fas fa-envelope me-2"></i><a href="mailto:seraphim@iiitl.ac.in" className="text-decoration-none text-dark">seraphim@iiitl.ac.in</a></p>
+            <p><i className="fas fa-map-marker-alt me-2 text-dark"></i>IIIT Lucknow, Lucknow, Uttar Pradesh</p>
+            <p><i className="fas fa-phone me-2 text-dark"></i>+91 906841XXXX</p>
+            <p><i className="fas fa-envelope me-2 text-dark"></i><a href="mailto:seraphim@iiitl.ac.in" className="text-decoration-none text-dark">seraphim@iiitl.ac.in</a></p>
 
             <h4>Follow Us</h4>
             <a href="#" className="text-primary me-2"><i className="fab fa-facebook fa-2x"></i></a>

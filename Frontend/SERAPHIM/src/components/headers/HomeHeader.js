@@ -24,8 +24,8 @@ function HomeHeader() {
         </div>
         <div className="text-container">
           <a id="A1" href="#">
-            <h1>Seraphim</h1>
-            <h2>A Social Awareness Club</h2>
+            <h1 className="Header-title">Seraphim</h1>
+            <h2 className="Header-title">A Social Awareness Club</h2>
           </a>
           <a id="A2" href="https://iiitl.ac.in/">
             <p>Indian Institute of Information Technology, Lucknow</p>

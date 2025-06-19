@@ -1,9 +1,3 @@
-/* Global reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: Arial, sans-serif;
@@ -11,7 +5,7 @@ body {
 }
 *{
     font-family: sans-serif;
-    margin: 0;
+    
     padding: 0;
     box-sizing: border-box;
 }
@@ -34,6 +28,7 @@ body {
     border-bottom: 1px solid #4a4a48;
     width: 100%;
     background-color: black;
+    height:150px;
 }
 
 .logo-container {
@@ -51,6 +46,10 @@ body {
     flex-grow: 1; 
     margin-left: 20px;
     color: white;
+    
+}
+.Header-title{
+    font-size: 19.2px!important;
 }
 
 #A1{
@@ -61,23 +60,29 @@ body {
 #A2{
     color: #ebebe3;
     text-decoration: none;
+    
 }
 
 h1 {
     font-size: 19.2px;
     margin-bottom: 5px;
+    font-weight: bold !important;
 }
 
 h2 {
     font-size: 19.2px;
     margin-bottom: 5px;
+    font-weight: bold !important;
     
 }
 
-p {
+footer p {
     color: #ebebe3;
     font-size: 14.4px;
     
+}
+p.info {
+    color:#ebebe3!important;
 }
 
 
@@ -86,44 +91,36 @@ body {
 }
 
 .navbar {
-    
-    background-color: #4a4a48; 
+    background-color: #4c4c4d !important; 
     padding: 10px 20px; 
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 4;
-       
+    
+    
    
-}
-
-.navContainer{
-    padding-left:32px;
-    display: flex;
-    gap:3;
 }
 
 .nav-links {
     list-style: none; 
-    display: flex;
-    justify-content: space-around; 
+    display: flex; 
+    justify-content: center; 
     white-space: nowrap;
-
-   
-    gap: 24px; /* Adjust the gap as needed */
-    list-style: none;
-     padding: 0;
-    margin: 0;
+padding-right: 50px !important;
+    padding-left: 50px!important; 
+    height: 30px!important;;
+    gap: 100px !important;;
     
 }
 
 .nav-links li {
     flex-grow: 1; 
     text-align: center; 
+    flex:none;
 }
 
 .nav-links a {
-    
     font-weight: bold;
     color: #ebebe3; 
     text-decoration:none; 
@@ -131,6 +128,8 @@ body {
     padding: 10px 0; 
     display: block; 
     transition: background-color 0.3s; 
+    flex:none;
+    text-align: center;
 }
 
 .nav-links a:hover {
@@ -143,6 +142,8 @@ body {
     }
     .nav-links {
         flex-direction: column; 
+        align-items: center;
+        gap:10px;
     }
 }
 
@@ -181,14 +182,6 @@ body {
     
     100% { transform: translateX(0); }  
 }
-
-footer {
-    
-    background-color: #4c4c4d;
-    color: #fff;
-    padding: 20px 0;
-   
-}
 footer { 
     
     background-color: #4c4c4d; 
@@ -197,39 +190,51 @@ footer {
 }
 
 .footer { 
+    background-color: #4c4c4d; 
     max-width: 1200px; 
     margin: 0 auto; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    padding: 0 20px; 
+    padding: 0 ; 
+    width:100%;
+    
+}
+footer, .footer, .footer * {
+    background-color: #4c4c4d !important;
 }
 
+
 .footer-content p { 
+        
     margin-bottom: 10px; 
     line-height: 1.5; 
 }
 
 .footer-content a { 
+    
     color: rgb(0, 0, 0); 
     text-decoration: none; 
 }
 
 .footer-content a:hover { 
+      
     text-decoration: underline; 
 }
 
 .social { 
+    
     display: flex; 
     gap: 15px; 
+     padding: 10px; 
 }
 
 .social img { 
     width: 35px; 
     height: 35px; 
     border-radius: 50%; 
-    /* background-color: #c19898; */ 
-    background-color: #4c4c4d;
+    
+    
 }
 
 .social img:hover { 
@@ -237,7 +242,7 @@ footer {
     background-color: #4a4a48; 
 }
 
-nav ul li a::before {
+.nav-links a::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -267,12 +272,16 @@ nav ul li a::before {
     #I6:hover::before {
     transform: scaleX(1); 
     }
+    #introduction{
+        font-size: 36.81px !important;
+    font-weight: 600 !important;
+    }
   #past{
     text-align: center;
     color: #000;
     font-family: "Bebas Neue", Sans-serif;
-    font-size: 41.81px;
-    font-weight: 600;
+    font-size: 36.81px !important;
+    font-weight: 600 !important;
     line-height: 53.76px;
     letter-spacing: 1px;
 }
@@ -293,6 +302,7 @@ nav ul li a::before {
     margin:10px;
     background-color: rgb(188, 207, 79);
     border-radius: 8px;
+    
 }
 .s1{
     
@@ -316,6 +326,14 @@ nav ul li a::before {
     border-radius: 10px;
     padding: 20px;
 }
+.campaign-section{
+    height: 260px !important;
+    margin-bottom: 20px !important;
+    background-color: rgb(188, 207, 79);
+    border-radius: 8px;
+    
+}
+
 
 #intro{
     text-align: center;
