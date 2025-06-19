@@ -7,12 +7,13 @@ import ContactUs from "./components/pages/contactUs.js";
 import FuturePlans from "./components/pages/FuturePlans.js";
 import Seraphs from "./components/pages/seraphs.js";
 import Partners from "./components/pages/Partners.js";
-
+import Register from './Register';
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+                <Route path="/" element={<Register />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/donate" element={<Donate />} />
