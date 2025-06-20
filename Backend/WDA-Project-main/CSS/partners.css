@@ -1,0 +1,93 @@
+/* General Body and Theme Styles */
+body {
+  font-family: sans-serif;
+  background-color: #ebebe3;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #222;
+}
+
+body.Dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Header Styles */
+.header-top {
+  background: black;
+  color: white;
+  padding: 10px;
+}
+
+.header-logo img {
+  height: 50px;
+}
+
+.header-text h1, .header-text h2, .header-text p {
+  margin: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #4a4a48;
+  padding: 10px 20px;
+}
+
+.navbar-nav .nav-link {
+  color: #ebebe3;
+  font-weight: bold;
+  text-align: center;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+  color: #c19898;
+}
+
+/* Page Content Styles */
+.Heading {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#btn {
+  display: block;
+  margin: 10px auto;
+}
+
+.card img {
+  height: 250px;
+  object-fit: cover;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #4c4c4d;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: white;
+  margin-left: 10px;
+}
+
+/* Scroll to Top Button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+}
+
+#scrollTop:hover {
+  background-color: #0056b3;
+} 
