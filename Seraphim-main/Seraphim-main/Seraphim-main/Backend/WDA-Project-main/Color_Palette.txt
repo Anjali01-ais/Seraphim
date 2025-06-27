@@ -1,0 +1,21 @@
+These are the colors used.
+
+https://palettes.shecodes.io/palettes/1654#palette
+
+
+
+.first-color { 
+	background: #ebebe3; 
+}
+	
+.second-color { 
+	background: #000000; 
+}
+
+.third-color { 
+	background: #4a4a48; 
+}
+
+.fourth-color { 
+	background: #c19898; 
+}

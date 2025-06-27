@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Seraphim</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/About.ico" />
+
+</head>
+<body>
+<div class="container-fluid header-top">
+    <div class="row align-items-center">
+        <div class="col-2 header-logo">
+            <img src="images/logo.jpg" alt="Seraphim Logo" class="img-fluid" height="50px">
+        </div>
+        <div class="col-10 header-text">
+            <h1>Seraphim</h1>
+            <h2>A Social Awareness Club</h2>
+            <p>Indian Institute of Information Technology, Lucknow</p>
+           
+        </div>
+    </div>
+</div>
+
+
+<nav id="N1" class="navbar position-sticky top-0 navbar-expand-md cn">
+    <div class="collapse navbar-collapse container-fluid" id="navbarNav">
+        <button class="navbar-toggler" id="navbar-toggler" onclick="expand()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+      <ul class="navbar-nav w-100 text-center" id="navUl">
+        <li class="nav-item col-1">
+          <a class="nav-link ca" href="index.html" id="I1">Our Work</a>
+        </li>
+        <li class="nav-item col-1">
+          <a class="nav-link ca" href="about.html" id="I2">About Us</a>
+        </li>
+        <li class="nav-item col-1">
+          <a class="nav-link ca" href="Gallery.html" id="I3">Gallery</a>
+        </li>
+        <li class="nav-item col-1">
+          <a class="nav-link ca" href="seraphs.html" id="I4">Seraphs</a>
+        </li>
+        <li class="nav-item col-1">
+          <a class="nav-link ca" href="contactUs.html" id="I3">Contact Us</a>
+        </li>
+        <li class="nav-item col-1">
+            <a class="nav-link ca" href="Donate.html" id="I2">Donate</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="FuturePlans.html" id="I6">Future Plans</a>
+          </li>
+          <li class="nav-item col-1">
+            <a class="nav-link ca" href="partners.html">Partners</a>
+          </li>
+      </ul>
+    </div>
+  </nav> 
+
+
+
+
+    
+
+<section class="py-5 fade-in">
+    <div class="container">
+        <h2 class="text-center title">About Us</h2>
+        <p class="text-center mission-text">
+            Seraphim is a college-based cultural club dedicated to raising social awareness and celebrating diverse cultures. We aim to create an inclusive space where students engage in meaningful discussions, events, and projects that foster empathy and understanding.
+        </p>
+    </div>
+</section>
+
+
+<section class="py-5 bg-light fade-in">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="images/image2.webp" class="img-fluid rounded" alt="Mission Image">
+            </div>
+            <div class="col-md-6">
+                <h3 class="title">Our Mission</h3>
+                <p class="mission-text">
+                    Seraphim's mission is to inspire students to explore cultural heritage and promote social awareness. By using empathy, knowledge, and collaboration, we strive to create a community that celebrates diversity and encourages positive social impact.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 fade-in">
+    <div class="container">
+        <h3 class="text-center title">Our Core Values</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm p-3">
+                    <div>
+                        <i class="fas fa-users icon"></i>
+                        <h5 class="card-title">Inclusivity</h5>
+                        <p class="card-text mission-text">We value diversity and strive to create a welcoming environment for all members.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm p-3">
+                    <div>
+                        <i class="fas fa-heart icon"></i>
+                        <h5 class="card-title">Empathy</h5>
+                        <p class="card-text mission-text">Empathy is at the heart of our efforts to understand and address social issues.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center shadow-sm p-3">
+                    <div>
+                        <i class="fas fa-lightbulb icon"></i>
+                        <h5 class="card-title">Awareness</h5>
+                        <p class="card-text mission-text">We promote awareness and encourage education to drive positive change.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-5 bg-light fade-in">
+    <div class="container">
+        <h3 class="text-center title">Our Activities</h3>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <p class="mission-text">
+                    Seraphim organizes a range of activities, from cultural events and guest lectures to workshops and community service projects. Our goal is to provide students with a space to learn, engage, and contribute to meaningful social change.
+                </p>
+            </div>
+            <div class="col-md-6">
+                <img src="images/image4.jpeg" class="img-fluid rounded" alt="Activities Image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<button id="scrollTop" title="Scroll to top">↑</button>
+   
+<script>
+    const scrollTop = document.getElementById("scrollTop");
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 200) {
+            scrollTop.style.display = "block";
+        } else {
+            scrollTop.style.display = "none";
+        }
+    });
+    scrollTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+</script>
+<section class="testimonials py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-4">What People Say</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="testimonial text-center p-4 border rounded shadow-sm">
+                    <p>"Seraphim opened my eyes to issues I never thought about before. The campaigns are not just informative but truly inspiring."</p>
+                    <footer>- Priya Sharma, Student</footer>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center p-4 border rounded shadow-sm">
+                    <p>"Being a part of Seraphim has been a life-changing experience. It has given me a platform to make a difference."</p>
+                    <footer>- Rahul Verma, Club Member</footer>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="testimonial text-center p-4 border rounded shadow-sm">
+                    <p>"The dedication and passion of the Seraphim team are unmatched. They are doing phenomenal work for the community."</p>
+                    <footer>- Dr. Meera Gupta, Faculty Advisor</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="did-you-know py-5" style="background-color: #f8f9fa;">
+    <div class="container">
+        <h2 class="text-center mb-4">Did You Know?</h2>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div id="fact" class="fact-box p-4 border rounded shadow-sm" style="background-color: #e9ecef; font-size: 18px; color: #333;">
+                    Loading fact...
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    const facts = [
+        "Over 2 billion people around the world lack access to safe drinking water. Simple actions can make a big difference in addressing this global issue.",
+        "Mental health disorders affect 1 in 4 people globally. It's important to talk about mental health and support those who need help.",
+        "More than 800 million people worldwide are living in extreme poverty. Awareness and collective action can help end this cycle.",
+        "Gender inequality affects all areas of life: education, employment, health, and political participation. The fight for gender equality is a fundamental human rights issue.",
+        "Climate change is already having real-world impacts: rising sea levels, extreme weather events, and loss of biodiversity. Every action we take can help reduce these effects.",
+        "Child labor is still a serious problem in many countries. Over 150 million children are involved in child labor around the world, and awareness is the first step to ending it.",
+        "Each year, millions of animals are trafficked for illegal purposes, causing harm to biodiversity. Conserving wildlife is essential to maintaining ecological balance.",
+        "Only 9% of plastic is recycled worldwide. Reducing plastic use and supporting recycling can have a significant impact on the environment."
+    ];
+    
+    function showRandomFact() {
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        document.getElementById("fact").innerText = randomFact;
+    }
+
+    window.onload = function() {
+        showRandomFact();  
+        
+        setInterval(showRandomFact, 7000);
+    };
+    let clicked = false;
+        let navUl = document.getElementById('navUl');
+        let expand = () => {
+            clicked = !(clicked);
+            if (clicked==false){
+                navUl.style.display="none";
+            }
+            else{
+                navUl.style.display = "flex";
+            }
+        }
+     
+</script>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 mb-md-3 mt-md-3">
+                <p class="mb-1">Seraphim</p>
+                <p class="mb-1">A Social Awareness Club</p>
+                <p class="mb-1">Indian Institute Of Information Technology</p>
+                <p class="mb-1">Lucknow - 226002, Uttar Pradesh, India.</p>
+                <p>Contact Us: E-mail: <a href="mailto:seraphim@iiitl.ac.in">seraphim@iiitl.ac.in</a></p>
+            </div>
+            <div class="col-md-6 text-md-end social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/seraphim_iiitl/"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

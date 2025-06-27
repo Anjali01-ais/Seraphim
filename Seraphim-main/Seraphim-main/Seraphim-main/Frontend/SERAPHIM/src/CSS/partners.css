@@ -1,0 +1,123 @@
+ /* Main Page Layout */
+.partners-page {
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Heading */
+#Heading {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+  
+  margin-top: 2rem;
+}
+
+/* Partner Cards */
+.row {
+  margin: 0;
+}
+
+.card {
+  height: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-img-top {
+  max-height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ccc;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Partner Name and Description */
+.card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Form Section */
+.form-wrapper {
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form#ngoForm input,
+form#ngoForm textarea {
+  width: 100%;
+  font-size: 1rem;
+}
+
+form#ngoForm textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button */
+button[type="submit"] {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.6rem;
+}
+
+/* Scroll to Top Button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: none;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#scrollTop:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .partners-page {
+    padding: 1rem;
+  }
+
+  .form-wrapper {
+    padding: 1rem;
+  }
+
+  #H {
+    font-size: 2rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+  }
+}
+
+    
+    
