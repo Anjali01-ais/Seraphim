@@ -96,7 +96,7 @@ npx nodemon server.js
 Backend will run on:
 
 ```
-http://localhost:8080
+http://localhost:5000
 ```
 
 ---
@@ -107,6 +107,20 @@ http://localhost:8080
 2. Open `index.html` in browser
 
 (Frontend and backend run on different ports and communicate via APIs.)
+OR
+split terminal
+one for backend andt other for frontend
+1.npm install (first time if)
+2. npm start
+
+----
+Frontend will run on:
+
+```
+http://localhost:3000
+```
+
+---
 
 ---
 
